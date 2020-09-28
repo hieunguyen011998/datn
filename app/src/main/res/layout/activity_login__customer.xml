@@ -35,24 +35,16 @@
         android:layout_marginHorizontal="20dp"
         android:inputType="textPersonName" />
 
-    <CheckBox
-        android:id="@+id/ActivityLoginCustomer_cbMissPass"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_gravity="right|center_horizontal"
-        android:layout_marginRight="20dp"
-        android:layout_weight="0.5"
-        android:textSize="16sp"
-        android:textColor="#39393C"
-        android:text="Nhớ mật khẩu" />
+
 
     <TextView
         android:id="@+id/ActivityginCustomer_txtQuenPass"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="0.5"
+        android:layout_weight="1"
         android:textSize="16sp"
         android:textColor="#39393C"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="20dp"
         android:layout_gravity="right"
         android:text="Quên mật khẩu ?">
@@ -81,5 +73,6 @@
         android:textSize="16sp"
         android:textColor="#39393C"
         android:gravity="center_horizontal"
+        android:textColorLink="@color/colorPrimaryDark"
         android:text="Bạn chưa có tài khoản ? Đăng ký" />
 </LinearLayout>
