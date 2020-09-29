@@ -1,14 +1,16 @@
-package com.example.datn;
+package com.example.datn.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ActivityMain_Shipper extends AppCompatActivity {
+import com.example.datn.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main__shipper);
+        setContentView(R.layout.activity_main);
     }
 }

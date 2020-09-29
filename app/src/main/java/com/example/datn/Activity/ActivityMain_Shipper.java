@@ -1,14 +1,16 @@
-package com.example.datn;
+package com.example.datn.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class OTP_Customer extends AppCompatActivity {
+import com.example.datn.R;
+
+public class ActivityMain_Shipper extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_otp__customer);
+        setContentView(R.layout.activity_main__shipper);
     }
 }
