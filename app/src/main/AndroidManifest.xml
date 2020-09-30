@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.datn">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,11 +11,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activity.Login_Customer" />
         <activity android:name=".Activity.ActivityMain_Shipper" />
-        <activity android:name=".Activity.Register_shipper" />
         <activity android:name=".Activity.OTP_Customer" />
-        <activity android:name=".Activity.Register_Customer" />
+        <activity android:name= ".Activity.ActivityMain_Customer"/>
         <activity android:name=".Activity.Login_Shipper" />
-        <activity android:name=".Activity.ActivityMain_Customer">
+        <activity android:name=".Activity.Register_Customer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

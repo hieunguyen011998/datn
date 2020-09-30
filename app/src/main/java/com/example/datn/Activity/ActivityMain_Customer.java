@@ -3,6 +3,7 @@ package com.example.datn.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -14,10 +15,12 @@ import com.example.datn.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ActivityMain_Customer extends AppCompatActivity {
-    public BottomNavigationView bottomNavigationView;
-    public android.widget.SearchView searchMainDrink;
-    public FrameLayout framMainContent;
-    public ActionBar toolbar;
+    private BottomNavigationView bottomNavigationView;
+    private android.widget.SearchView searchMainDrink;
+    private FrameLayout framMainContent;
+    private ActionBar toolbar;
+    private TextView txtTittleSuaChua;
+    private RecyclerView recyclerSuaChua;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,8 @@ public class ActivityMain_Customer extends AppCompatActivity {
           bottomNavigationView = (BottomNavigationView) findViewById(R.id.ActivityMainCustomer_bottomNaviViewMenu);
           framMainContent = (FrameLayout) findViewById(R.id.ActivityMainCustomer_frameMainContent);
           searchMainDrink = (SearchView) findViewById(R.id.Activity_search);
+          txtTittleSuaChua = (TextView) findViewById(R.id.id_ActivityMainCustomer_txtTittleSuaChua);
+          recyclerSuaChua = (RecyclerView) findViewById(R.id.ActivityMainCustomer_RecycleSuaChua);
     }
     public void addEvents()
     {
