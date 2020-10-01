@@ -5,13 +5,13 @@ import java.util.Date;
 public class Drink {
     public int id;
     public String name;
-    public String imageUri;
+    public int imageUri;
     public int amount;
-    public float price;
+    public int price;
     public String type;
-    public Date dateCreate;
+    public String dateCreate;
 
-    public Drink(int id, String name, String imageUri, int amount, float price, String type, Date dateCreate) {
+    public Drink(int id, String name, int imageUri, int amount, int price, String type, String dateCreate) {
         this.id = id;
         this.name = name;
         this.imageUri = imageUri;
@@ -37,11 +37,11 @@ public class Drink {
         this.name = name;
     }
 
-    public String getImageUri() {
+    public int getImageUri() {
         return imageUri;
     }
 
-    public void setImageUri(String imageUri) {
+    public void setImageUri(int imageUri) {
         this.imageUri = imageUri;
     }
 
@@ -53,11 +53,11 @@ public class Drink {
         this.amount = amount;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -69,11 +69,11 @@ public class Drink {
         this.type = type;
     }
 
-    public Date getDateCreate() {
+    public String getDateCreate() {
         return dateCreate;
     }
 
-    public void setDateCreate(Date dateCreate) {
+    public void setDateCreate(String dateCreate) {
         this.dateCreate = dateCreate;
     }
 }
